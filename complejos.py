@@ -22,9 +22,9 @@ def representarComplejo(numComplejo):
     complejoFormatoPy = complex(complejoFormatoI[:index] + "j" + complejoFormatoI[index+1:])
 
     if complejoFormatoPy.imag < 0:
-        complejoFormatoPy = complex(str(complejoFormatoPy.real*1.35) + str(complejoFormatoPy.imag) + "j")
+        complejoFormatoPy = complex(str(round(complejoFormatoPy.real*1.35)) + str(complejoFormatoPy.imag) + "j")
     else:
-        complejoFormatoPy = complex(str(complejoFormatoPy.real*1.35) + "+" + str(complejoFormatoPy.imag) + "j")
+        complejoFormatoPy = complex(str(round(complejoFormatoPy.real*1.35)) + "+" + str(complejoFormatoPy.imag) + "j")
 
     plano.resetear()
 
