@@ -4,7 +4,8 @@ from termcolor import colored
 coordenadaVacía = "  "
 coordenadaLlena = "0 "
 
-def sacarTrayectoria(plano, coordenadaFinal):
+#Sacar trayectoria DESDE EL ORIGEN
+def sacarTrayectoriaDO(plano, coordenadaFinal):
     coordenadasAMarcar = []
 
     cX = int(coordenadaFinal.split(",")[0])
@@ -83,7 +84,7 @@ class Plano:
 
     #Dibuja un vector en el plano
     def dibujarVector(self, coordenadaFinal, color):
-        trayectoria = sacarTrayectoria(self.plano, coordenadaFinal)
+        trayectoria = sacarTrayectoriaDO(self.plano, coordenadaFinal)
 
         for i, coordenada in enumerate(trayectoria):
             self.plano[coordenada] = colored("0 ", color)
@@ -92,7 +93,7 @@ class Plano:
 
     #Dibujar complejo
     def dibujarComplejo(self, numComplejo, color):
-        trayectoria = sacarTrayectoria(self.plano, "{}, {}".format(int(numComplejo.real), int(numComplejo.imag)))
+        trayectoria = sacarTrayectoriaDO(self.plano, "{}, {}".format(int(numComplejo.real), int(numComplejo.imag)))
 
         for i, coordenada in enumerate(trayectoria):
             self.plano[coordenada] = colored("0 ", color)
