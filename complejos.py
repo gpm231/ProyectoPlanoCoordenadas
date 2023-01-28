@@ -5,7 +5,7 @@ from termcolor import colored
 
 import Bibliotecas.plano as moduloPlano
 
-tamañoPlano = 25
+tamañoPlano = 22
 
 plano = moduloPlano.Plano(round(tamañoPlano*1.35), tamañoPlano) # el *1.35 es para compensar que los caracteres en un ordenador son más altos que anchos
 
@@ -30,8 +30,8 @@ def representarComplejo(numComplejo):
     return complejoFormatoPy
 
 entrada = str(input("Introduce el número complejo: "))
-complejoEnFormatoPython = aFormatoI(representarComplejo(entrada))
+complejoEnFormatoPython = representarComplejo(entrada)
 
-print(colored("Número: " + str(complejoEnFormatoPython), "blue"))
-print(colored("Conjugado: " + str(complejoEnFormatoPython.conjugate()), "red"))
-print(colored("Opuesto: " + str(-complejoEnFormatoPython), "green"))
+print(colored("Número: " + str(aFormatoI(complejoEnFormatoPython)), "blue"))
+print(colored("Conjugado: " + str(aFormatoI(complejoEnFormatoPython.conjugate())), "red"))
+print(colored("Opuesto: " + str(aFormatoI(-complejoEnFormatoPython)), "green"))
