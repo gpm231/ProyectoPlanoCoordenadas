@@ -21,6 +21,11 @@ def representarComplejo(numComplejo):
     index = complejoFormatoI.find("i")
     complejoFormatoPy = complex(complejoFormatoI[:index] + "j" + complejoFormatoI[index+1:])
 
+    if complejoFormatoPy.imag < 0:
+        complejoFormatoPy = complex(str(complejoFormatoPy.real*1.35) + str(complejoFormatoPy.imag) + "j")
+    else:
+        complejoFormatoPy = complex(str(complejoFormatoPy.real*1.35) + "+" + str(complejoFormatoPy.imag) + "j")
+
     plano.resetear()
 
     plano.dibujarComplejo(complejoFormatoPy, "blue")

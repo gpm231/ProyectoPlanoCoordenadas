@@ -20,4 +20,13 @@ plano = moduloPlano.Plano(round(tamañoPlano*1.35), tamañoPlano) # el *1.35 es 
     #entrada = str(input("Introduce el vector: "))
 
 entrada = str(input("Introduce el vector: "))
+
+cX = int(entrada.split(",")[0])
+cY = int(entrada.split(", ")[1])
+
+if cY < 0:
+    entrada = str("{}, {}".format(int(cX*1.35), cY)) # el 1.35 por lo que pone en la línea en la que se crea el plano
+else:
+    entrada = str("{}, +{}".format(int(cX*1.35), cY))
+
 plano.dibujarVector(entrada, "red")
