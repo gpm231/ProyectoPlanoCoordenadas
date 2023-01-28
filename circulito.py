@@ -14,7 +14,7 @@ def crearCirculo(velocidad, divisiones):
 
     while angulo < 2*math.pi:
         plano.resetear()
-        plano.dibujarVector("{}, {}".format(round(math.cos(angulo)*tamañoPlano*1.35), round(math.sin(angulo)*tamañoPlano)), "green") # el *1.35 por lo que pone en la l. 10
+        plano.dibujarVector("{}, {}".format(round(math.cos(angulo)*tamañoPlano*1.35), round(math.sin(angulo)*tamañoPlano)), "green") # el *1.35 por lo que pone en la línea en la que creamos el plano
         angulo += stepAngulo
         time.sleep(1/velocidad)
 
