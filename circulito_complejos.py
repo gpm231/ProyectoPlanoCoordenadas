@@ -35,7 +35,7 @@ def crearCirculo(velocidad, divisiones):
 
         representarComplejo(numero)
 
-        print(colored("Número: " + str(aFormatoI(numero)), "blue"))
+        print(colored("Número: " + str(aFormatoI(numero)), "blue", attrs=["underline"]))
         print(colored("Conjugado: " + str(aFormatoI(numero.conjugate())), "red"))
         print(colored("Opuesto: " + str(aFormatoI(-numero)), "green"))
 

@@ -37,6 +37,6 @@ def representarComplejo(numComplejo):
 entrada = str(input("Introduce el número complejo: "))
 complejoEnFormatoPython = representarComplejo(entrada)
 
-print(colored("Número: " + str(aFormatoI(complejoEnFormatoPython)), "blue"))
+print(colored("Número: " + str(aFormatoI(complejoEnFormatoPython)), "blue", attrs=["underline"]))
 print(colored("Conjugado: " + str(aFormatoI(complejoEnFormatoPython.conjugate())), "red"))
 print(colored("Opuesto: " + str(aFormatoI(-complejoEnFormatoPython)), "green"))

@@ -83,19 +83,19 @@ class Plano:
             print(string)
 
     #Dibuja un vector en el plano
-    def dibujarVector(self, coordenadaFinal, color):
+    def dibujarVector(self, coordenadaFinal, color, estilo=[]): # estilo es opcional
         trayectoria = sacarTrayectoriaDO(self.plano, coordenadaFinal)
 
         for i, coordenada in enumerate(trayectoria):
-            self.plano[coordenada] = colored("0 ", color)
+            self.plano[coordenada] = colored("0 ", color, attrs=estilo)
 
         self.sacar()
 
     #Dibujar complejo
-    def dibujarComplejo(self, numComplejo, color):
+    def dibujarComplejo(self, numComplejo, color, estilo=[]): # estilo es opcional
         trayectoria = sacarTrayectoriaDO(self.plano, "{}, {}".format(int(numComplejo.real), int(numComplejo.imag)))
 
         for i, coordenada in enumerate(trayectoria):
-            self.plano[coordenada] = colored("0 ", color)
+            self.plano[coordenada] = colored("0 ", color, attrs=estilo)
 
         self.sacar()
