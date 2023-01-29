@@ -1,6 +1,3 @@
-import random
-import math
-import time
 from termcolor import colored
 
 import Bibliotecas.plano as moduloPlano

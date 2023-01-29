@@ -1,6 +1,5 @@
-import random
-import math
 import time
+import math
 
 import Bibliotecas.plano as moduloPlano
 

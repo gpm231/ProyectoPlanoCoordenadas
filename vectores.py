@@ -1,7 +1,3 @@
-import random
-import math
-import time
-
 import Bibliotecas.plano as moduloPlano
 
 tamañoPlano = 22
