@@ -97,10 +97,11 @@ class Plano:
 
 
     #Dibujar complejo
-    def dibujarComplejo(self, numComplejo, color, estilo=[]): # estilo es opcional
+    def dibujarComplejo(self, numComplejo, color, estilo=[], sacar=True): # estilo es opcional
         trayectoria = sacarTrayectoriaDO(self.plano, "{}, {}".format(int(numComplejo.real), int(numComplejo.imag)))
 
         for i, coordenada in enumerate(trayectoria):
             self.plano[coordenada] = colored("0 ", color, attrs=estilo)
 
-        self.sacar()
+        if sacar:
+            self.sacar()

@@ -26,8 +26,8 @@ def representarComplejo(numComplejo):
 
     plano.resetear()
 
-    plano.dibujarComplejo(complejoFormatoPy, "blue")
-    plano.dibujarComplejo(complejoFormatoPy.conjugate(), "red")
+    plano.dibujarComplejo(complejoFormatoPy, "blue", sacar=False)
+    plano.dibujarComplejo(complejoFormatoPy.conjugate(), "red", sacar=False)
     plano.dibujarComplejo(-complejoFormatoPy, "green")
 
     return complejoFormatoPy

@@ -18,8 +18,8 @@ def aFormatoI(complejo):
 def representarComplejo(numComplejo):
     plano.resetear()
 
-    plano.dibujarComplejo(numComplejo, "blue")
-    plano.dibujarComplejo(numComplejo.conjugate(), "red")
+    plano.dibujarComplejo(numComplejo, "blue", sacar=False)
+    plano.dibujarComplejo(numComplejo.conjugate(), "red", sacar=False)
     plano.dibujarComplejo(-numComplejo, "green")
 
 
@@ -43,4 +43,4 @@ def crearCirculo(velocidad, divisiones):
         angulo += stepAngulo
         time.sleep(1/velocidad)
 
-crearCirculo(3, 30)
+crearCirculo(7, 30)
