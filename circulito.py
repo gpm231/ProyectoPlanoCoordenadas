@@ -18,4 +18,4 @@ def crearCirculo(velocidad, divisiones):
         angulo += stepAngulo
         time.sleep(1/velocidad)
 
-crearCirculo(40, 30)
+crearCirculo(60, 15)
