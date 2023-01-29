@@ -11,6 +11,7 @@ def aFormatoI(complejo):
     index = complejoFormatoJ.find("j")
     return complejoFormatoJ[:index] + "i" + complejoFormatoJ[index+1:]
 
+
 # Transforma el complejo en formato i (5+3i) al formato de python (5+3j)
 # Saca también el conjugado y el opuesto
 def representarComplejo(numComplejo):

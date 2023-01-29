@@ -7,6 +7,7 @@ tamañoPlano = 22
 
 plano = moduloPlano.Plano(round(tamañoPlano*1.35), tamañoPlano) # el *1.35 es para compensar que los caracteres en un ordenador son más altos que anchos
 
+
 def crearCirculo(velocidad, divisiones):
     stepAngulo = math.pi/divisiones
     angulo = 0

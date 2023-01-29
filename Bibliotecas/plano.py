@@ -33,6 +33,7 @@ def sacarTrayectoriaDO(plano, coordenadaFinal):
 
     return coordenadasAMarcar
 
+
 def crearPlano(xMax, yMax):
     plano = {}
 
@@ -65,9 +66,11 @@ class Plano:
 
         self.plano = crearPlano(xMax, yMax)
 
+
     #En el caso de que queramos representar varios vectores sin parar el codigo habrá que usar esta función para limpiar el plano
     def resetear(self):
         self.plano = crearPlano(self.xMax, self.yMax)
+
 
     #Dibuja el plano en la consola
     def sacar(self):
@@ -82,6 +85,7 @@ class Plano:
 
             print(string)
 
+
     #Dibuja un vector en el plano
     def dibujarVector(self, coordenadaFinal, color, estilo=[]): # estilo es opcional
         trayectoria = sacarTrayectoriaDO(self.plano, coordenadaFinal)
@@ -90,6 +94,7 @@ class Plano:
             self.plano[coordenada] = colored("0 ", color, attrs=estilo)
 
         self.sacar()
+
 
     #Dibujar complejo
     def dibujarComplejo(self, numComplejo, color, estilo=[]): # estilo es opcional

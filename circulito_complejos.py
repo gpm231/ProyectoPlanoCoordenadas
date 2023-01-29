@@ -13,6 +13,7 @@ def aFormatoI(complejo):
     index = complejoFormatoJ.find("j")
     return complejoFormatoJ[:index] + "i" + complejoFormatoJ[index+1:]
 
+
 # Saca también el conjugado y el opuesto
 def representarComplejo(numComplejo):
     plano.resetear()
@@ -20,6 +21,7 @@ def representarComplejo(numComplejo):
     plano.dibujarComplejo(numComplejo, "blue")
     plano.dibujarComplejo(numComplejo.conjugate(), "red")
     plano.dibujarComplejo(-numComplejo, "green")
+
 
 def crearCirculo(velocidad, divisiones):
     stepAngulo = math.pi/divisiones
