@@ -4,7 +4,7 @@ from termcolor import colored
 
 import Bibliotecas.plano as moduloPlano
 
-tamañoPlano = 22
+tamañoPlano = 16
 
 plano = moduloPlano.Plano(round(tamañoPlano*1.35), tamañoPlano) # el *1.35 es para compensar que los caracteres en un ordenador son más altos que anchos
 
@@ -27,7 +27,7 @@ def crearCirculo(velocidad, divisiones):
     stepAngulo = math.pi/divisiones
     angulo = 0
 
-    while True:#angulo < 2*math.pi:
+    while True: #angulo < 2*math.pi:
         numero = 0+0j
         if math.sin(angulo) >= 0:
             numero = complex("{}+{}j".format(round(math.cos(angulo)*tamañoPlano*1.35), round(math.sin(angulo)*tamañoPlano))) # construye el complejo

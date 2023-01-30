@@ -3,7 +3,7 @@ import math
 
 import Bibliotecas.plano as moduloPlano
 
-tamañoPlano = 22
+tamañoPlano = 18
 
 plano = moduloPlano.Plano(round(tamañoPlano*1.35), tamañoPlano) # el *1.35 es para compensar que los caracteres en un ordenador son más altos que anchos
 
